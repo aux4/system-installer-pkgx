@@ -1,0 +1,58 @@
+{
+  "scope": "aux4",
+  "name": "system-installer-pkgx",
+  "version": "0.0.1",
+  "profiles": [
+    {
+      "name": "aux4:pkger:system",
+      "commands": [
+        {
+          "name": "pkgx",
+          "execute": [
+            "profile:aux4:pkger:system:pkgx"
+          ],
+          "help": {
+            "text": "pkgx"
+          }
+        } 
+      ]
+    },
+    {
+      "name": "aux4:pkger:system:pkgx",
+      "commands": [
+        {
+          "name": "install",
+          "execute": [
+            "pkgx install ${package}"
+          ],
+          "help": {
+            "text": "install pkgx package",
+            "variables": [
+              {
+                "name": "package",
+                "text": "package name",
+                "arg": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "uninstall",
+          "execute": [
+            "pkgx uninstall ${package}"
+          ],
+          "help": {
+            "text": "uninstall pkgx package",
+            "variables": [
+              {
+                "name": "package",
+                "text": "package name",
+                "arg": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
