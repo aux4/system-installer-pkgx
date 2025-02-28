@@ -1,7 +1,15 @@
 {
   "scope": "aux4",
   "name": "system-installer-pkgx",
-  "version": "0.0.1",
+  "description": "aux4 system installer for pkgx",
+  "version": "0.0.3",
+  "dependencies": [
+    "aux4/pkger"
+  ],
+  "tags": [
+    "aux4",
+    "system-installer"
+  ],
   "profiles": [
     {
       "name": "aux4:pkger:system",
@@ -12,7 +20,7 @@
             "profile:aux4:pkger:system:pkgx"
           ],
           "help": {
-            "text": "pkgx"
+            "text": "manage pkgx packages"
           }
         } 
       ]
