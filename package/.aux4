@@ -2,7 +2,7 @@
   "scope": "aux4",
   "name": "system-installer-pkgx",
   "description": "aux4 system installer for pkgx",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": [
     "aux4/pkger"
   ],
